@@ -1,59 +1,60 @@
-
-import React, { useState } from 'react';
-import { Mail, Phone, Linkedin, Github, Send, MapPin } from 'lucide-react';
+import React, { useState } from "react";
+import { Mail, Phone, Linkedin, Github, Send, MapPin } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'napemmoke@gmail.com',
-      href: 'mailto:napemmoke@gmail.com',
-      color: 'from-blue-500 to-cyan-500'
+      label: "Email",
+      value: "napemmoke@gmail.com",
+      href: "mailto:napemmoke@gmail.com",
+      color: "from-blue-500 to-cyan-500",
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: '+27 62 673 3578',
-      href: 'tel:+27626733578',
-      color: 'from-green-500 to-emerald-500'
+      label: "Phone",
+      value: "+27 62 673 3578",
+      href: "tel:+27626733578",
+      color: "from-green-500 to-emerald-500",
     },
     {
       icon: Linkedin,
-      label: 'LinkedIn',
-      value: 'Connect with me',
-      href: 'https://www.linkedin.com',
-      color: 'from-blue-600 to-blue-500'
+      label: "LinkedIn",
+      value: "Connect with me",
+      href: "https://www.linkedin.com/in/mmokenape/",
+      color: "from-blue-600 to-blue-500",
     },
     {
       icon: Github,
-      label: 'GitHub',
-      value: 'View my code',
-      href: 'https://github.com',
-      color: 'from-gray-600 to-gray-500'
-    }
+      label: "GitHub",
+      value: "View my code",
+      href: "https://github.com/Mmoke-Nape",
+      color: "from-gray-600 to-gray-500",
+    },
   ];
 
   return (
@@ -69,7 +70,8 @@ const Contact = () => {
             Let's Work <span className="gradient-text">Together</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss how we can collaborate on your next project.
+            Ready to bring your ideas to life? Let's discuss how we can
+            collaborate on your next project.
           </p>
         </div>
 
@@ -79,8 +81,9 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <p className="text-muted-foreground mb-8">
-                I'm always open to discussing new opportunities, interesting projects, 
-                or just having a conversation about technology and software development.
+                I'm always open to discussing new opportunities, interesting
+                projects, or just having a conversation about technology and
+                software development.
               </p>
             </div>
 
@@ -91,20 +94,28 @@ const Contact = () => {
                   <a
                     key={info.label}
                     href={info.href}
-                    target={info.href.startsWith('http') ? '_blank' : undefined}
-                    rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    target={info.href.startsWith("http") ? "_blank" : undefined}
+                    rel={
+                      info.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="block p-4 bg-card border border-border rounded-xl hover-lift group transition-all duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="flex items-center space-x-4">
-                      <div className={`p-3 bg-gradient-to-br ${info.color} rounded-lg text-white group-hover:scale-110 transition-transform duration-300`}>
+                      <div
+                        className={`p-3 bg-gradient-to-br ${info.color} rounded-lg text-white group-hover:scale-110 transition-transform duration-300`}
+                      >
                         <IconComponent size={20} />
                       </div>
                       <div>
                         <h4 className="font-semibold group-hover:text-primary transition-colors">
                           {info.label}
                         </h4>
-                        <p className="text-muted-foreground text-sm">{info.value}</p>
+                        <p className="text-muted-foreground text-sm">
+                          {info.value}
+                        </p>
                       </div>
                     </div>
                   </a>
@@ -119,7 +130,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Location</h4>
                   <p className="text-muted-foreground">
-                    South Africa<br />
+                    South Africa
+                    <br />
                     Available for remote work and collaboration
                   </p>
                 </div>
@@ -128,14 +140,17 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="animate-scale-in" style={{ animationDelay: '0.3s' }}>
+          <div className="animate-scale-in" style={{ animationDelay: "0.3s" }}>
             <div className="bg-card border border-border rounded-2xl p-8">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Your Name
                     </label>
                     <input
@@ -150,7 +165,10 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Email Address
                     </label>
                     <input
@@ -167,7 +185,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Subject
                   </label>
                   <input
@@ -183,7 +204,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Message
                   </label>
                   <textarea
@@ -213,10 +237,13 @@ const Contact = () => {
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-primary/10 to-cyan-500/10 rounded-2xl p-8 border border-primary/20">
-            <h3 className="text-2xl font-bold mb-4">Ready to Start a Project?</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              Ready to Start a Project?
+            </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Whether you have a specific project in mind or just want to explore possibilities, 
-              I'm here to help bring your ideas to life with innovative software solutions.
+              Whether you have a specific project in mind or just want to
+              explore possibilities, I'm here to help bring your ideas to life
+              with innovative software solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
