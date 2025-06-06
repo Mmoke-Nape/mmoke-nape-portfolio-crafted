@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
   ),
-  base: "/mmoke-nape-portfolio-crafted/",
+  base: mode === "production" ? "/mmoke-nape-portfolio-crafted/" : "/",
 
   resolve: {
     alias: {
