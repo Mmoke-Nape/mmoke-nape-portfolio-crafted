@@ -1,50 +1,67 @@
 
 import React from 'react';
-import { MapPin, Calendar, ExternalLink } from 'lucide-react';
+import { MapPin, Calendar } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
     {
       company: 'Entelect Software',
-      position: 'Software Engineer',
-      location: 'South Africa',
-      period: '2022 - Present',
-      description: 'Leading full-stack development projects with a focus on modern web technologies and financial sector solutions.',
+      position: 'Intermediate Software Engineer',
+      location: 'Johannesburg, South Africa',
+      period: 'Jan 2023 – Present',
+      description:
+        'End-to-end delivery of bank-grade solutions: requirements, architecture, production code, code reviews, mentoring juniors, and presentations to C-level stakeholders.',
       highlights: [
-        'Developed enterprise-level applications using Angular and Java Spring Boot',
-        'Implemented microservices architecture for scalable solutions',
-        'Collaborated with cross-functional teams to deliver high-quality software',
-        'Mentored junior developers and contributed to code review processes'
+        'Full-stack delivery for tier-one banking clients in global markets and retail business banking',
+        'Modernisation of legacy integrations toward REST microservices with measurable latency and reliability gains',
+        'Test automation and quality gates (e.g. JUnit, Cypress) to protect regressions at scale',
+        'Mentorship, client demos, and ownership of sprint ceremonies alongside day-to-day engineering'
       ],
-      technologies: ['Angular', 'Java Spring Boot', 'TypeScript', 'Microservices', 'Git'],
+      technologies: [
+        'Java / Spring Boot',
+        'Java EE',
+        'Angular',
+        'TypeScript',
+        'Flutter',
+        'SQL',
+        'AWS',
+        'Docker',
+        'GitLab',
+        'CI/CD',
+        'JUnit',
+        'Cypress'
+      ],
       color: 'from-blue-500 to-cyan-500'
     }
   ];
 
   const projects = [
     {
-      title: 'Standard Bank – CIB GM - Khayalami',
-      category: 'Frontend Development',
-      description: 'Advanced frontend application using cutting-edge technologies for financial data visualization and management.',
-      technologies: ['Angular', 'Kibana', 'Redux', 'TypeScript', 'RxJS'],
+      title: 'Standard Bank – CIB Global Markets, Khayalami',
+      category: 'Full-Stack',
+      period: 'Jul 2023 – Present',
+      description:
+        'International payments platform handling high daily value with strict performance targets; observability and operational tooling for large internal user bases.',
+      technologies: ['Angular', 'Java EE', 'Kibana', 'Elastic', 'TypeScript', 'JUnit', 'Cypress'],
       features: [
-        'Real-time data visualization dashboards',
-        'Complex state management with Redux',
-        'Interactive financial reporting tools',
-        'Responsive design for multiple devices'
+        'Built an Angular / Java EE application for international payments (R1M+ daily volume) with sub–2s refresh, cutting user wait times by about 70%',
+        'Delivered a Kibana–Elastic dashboard for real-time payment status, adopted by 150+ staff and saving roughly 10 staff-hours per week',
+        'Promoted to mid-level within 12 months; currently mentors three junior developers',
+        'Refactored legacy SOAP services into REST microservices, reducing latency by about 60% and errors by about 90%',
+        'Introduced automated regression testing (JUnit, Cypress) with strong coverage (around 85%)'
       ],
       color: 'from-green-500 to-emerald-500'
     },
     {
-      title: 'Absa – RBB - Common Services',
-      category: 'Full-Stack Development',
-      description: 'Comprehensive full-stack solution providing common services across multiple banking applications.',
-      technologies: ['Java Spring Boot', 'Key Cloak', 'Angular', 'PostgreSQL', 'Docker'],
+      title: 'Absa – RBB Common Services',
+      category: 'Full-Stack',
+      period: 'Feb 2023 – Jun 2023',
+      description:
+        'Role and access management for administrators across retail business banking services, with a focus on reliability and incident response.',
+      technologies: ['Angular', 'Java Spring Boot', 'SQL', 'Docker', 'REST'],
       features: [
-        'Authentication and authorization services',
-        'RESTful API development',
-        'Database design and optimization',
-        'Containerized deployment with Docker'
+        'Developed a role-management dashboard for 200 admins, cutting provisioning time from about 30 minutes to about 5 minutes',
+        'Resolved 120+ P1/P2 defects, reducing mean time to repair by about 45% while maintaining roughly 99.8% availability'
       ],
       color: 'from-purple-500 to-pink-500'
     }
@@ -146,14 +163,18 @@ const Experience = () => {
                     <div className={`inline-block px-3 py-1 bg-gradient-to-r ${project.color} text-white rounded-full text-xs font-medium mb-3`}>
                       {project.category}
                     </div>
-                    <h4 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                    <h4 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                       {project.title}
                     </h4>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                      <Calendar size={14} className="shrink-0" />
+                      <span>{project.period}</span>
+                    </div>
                     <p className="text-muted-foreground">{project.description}</p>
                   </div>
 
                   <div>
-                    <h5 className="font-semibold mb-3">Key Features:</h5>
+                    <h5 className="font-semibold mb-3">Highlights:</h5>
                     <ul className="space-y-1">
                       {project.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start space-x-2 text-sm">

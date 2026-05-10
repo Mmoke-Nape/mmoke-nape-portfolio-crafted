@@ -45,34 +45,37 @@ const About = () => {
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                With over <span className="text-primary font-semibold">two years of experience</span> in the financial and technological sectors, 
-                I've developed a strong foundation in full-stack development and a passion for creating innovative software solutions.
+                I am a results-driven engineer with almost{" "}
+                <span className="text-primary font-semibold">four years of experience</span> delivering high-performance, cloud-native, low-latency systems in{" "}
+                <span className="text-primary font-semibold">FinTech and banking</span>, optimizing microservices, transaction flows, and risk systems.
               </p>
               
               <p>
-                Currently working at <span className="text-primary font-semibold">Entelect Software</span>, I specialize in modern web technologies 
-                and mobile development, with expertise spanning from frontend frameworks like Angular and Flutter to backend technologies 
-                including Java Spring Boot and microservices architecture.
+                At <span className="text-primary font-semibold">Entelect Software</span>, I work across{" "}
+                <span className="text-primary font-semibold">Java Spring Boot and Java EE</span>,{" "}
+                <span className="text-primary font-semibold">Angular</span>, and <span className="text-primary font-semibold">Flutter</span>, backed by{" "}
+                <span className="text-primary font-semibold">SQL</span> and <span className="text-primary font-semibold">AWS</span>. I am fluent in{" "}
+                <span className="text-primary font-semibold">Agile and Scrum</span>, <span className="text-primary font-semibold">CI/CD</span>,{" "}
+                <span className="text-primary font-semibold">Docker</span>, and <span className="text-primary font-semibold">GitLab</span>.
               </p>
               
               <p>
-                My approach to software development is rooted in <span className="text-primary font-semibold">adaptability</span>, 
-                <span className="text-primary font-semibold"> critical thinking</span>, and a commitment to continuous learning. 
-                I thrive in collaborative environments where I can contribute to team success while growing my technical expertise.
+                Beyond shipping code, I lead <span className="text-primary font-semibold">client-facing demos</span>, mentor junior developers, and own{" "}
+                <span className="text-primary font-semibold">sprint ceremonies</span> — combining technical depth with clear communication and steady delivery.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4">
               <div className="bg-card border border-border rounded-xl p-4">
+                <div className="text-2xl font-bold text-primary">4</div>
+                <div className="text-sm text-muted-foreground">Years Experience (approx.)</div>
+              </div>
+              <div className="bg-card border border-border rounded-xl p-4">
                 <div className="text-2xl font-bold text-primary">2+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-sm text-muted-foreground">Enterprise Engagements</div>
               </div>
               <div className="bg-card border border-border rounded-xl p-4">
-                <div className="text-2xl font-bold text-primary">5+</div>
-                <div className="text-sm text-muted-foreground">Major Projects</div>
-              </div>
-              <div className="bg-card border border-border rounded-xl p-4">
-                <div className="text-2xl font-bold text-primary">10+</div>
+                <div className="text-2xl font-bold text-primary">12+</div>
                 <div className="text-sm text-muted-foreground">Technologies</div>
               </div>
             </div>

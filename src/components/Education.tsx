@@ -5,17 +5,18 @@ import { GraduationCap, Award, Calendar, BookOpen } from 'lucide-react';
 const Education = () => {
   const education = {
     degree: 'BSc Information Technology',
-    specialization: 'Software Engineering',
+    specialization: 'Software Engineering (undergraduate)',
     institution: 'Eduvos (Pearson)',
-    period: '2018 - 2021',
-    description: 'Comprehensive program focusing on software development, computer science fundamentals, and practical application of technology solutions.',
+    period: 'Completed',
+    grade: '86.2%',
+    description:
+      'Pearson-accredited degree specialising in software engineering, with strong academic performance and a blend of technical, business, and risk-focused modules.',
     coursework: [
-      'Object-Oriented Programming',
-      'Database Management Systems',
-      'Software Engineering Principles',
-      'Web Development Technologies',
-      'Mobile Application Development',
-      'System Analysis and Design'
+      'Management and Application of IT',
+      'Data Structures',
+      'Information Systems Development',
+      'Corporate Finance & Investment Management',
+      'Insurance & Risk Management'
     ]
   };
 
@@ -24,39 +25,39 @@ const Education = () => {
       title: 'Certificate of Excellence',
       institution: 'Eduvos (Pearson)',
       year: '2022',
-      description: 'Awarded for outstanding academic performance and dedication to software engineering studies.',
+      description: 'Awarded for maintaining an average above 86.2% across the programme.',
       icon: Award,
       color: 'from-yellow-500 to-orange-500'
     },
     {
       title: 'Certified Flutter Developer',
-      institution: 'Professional Certification',
+      institution: 'Academind (Maximilian Schwarzmüller) — Udemy',
       year: '2020',
-      description: 'Comprehensive certification covering Flutter framework, Dart programming, and mobile app development.',
+      description: 'End-to-end Flutter and Dart training for production-quality mobile applications.',
       icon: BookOpen,
       color: 'from-blue-500 to-cyan-500'
     },
     {
       title: 'Web Development Training',
-      institution: 'Professional Development',
+      institution: 'Professional development',
       year: '2021',
-      description: 'Advanced training in modern web development technologies, frameworks, and best practices.',
+      description: 'Modern web fundamentals, tooling, and practical build patterns.',
       icon: BookOpen,
       color: 'from-green-500 to-emerald-500'
     },
     {
       title: 'Java Programming Masterclass',
-      institution: 'Professional Development',
+      institution: 'Professional development',
       year: '2021',
-      description: 'Comprehensive Java programming course covering advanced concepts and enterprise development.',
+      description: 'Core through advanced Java, with an emphasis on skills used in enterprise environments.',
       icon: BookOpen,
       color: 'from-red-500 to-pink-500'
     },
     {
       title: 'Python Programming Masterclass',
-      institution: 'Professional Development', 
+      institution: 'Professional development',
       year: '2021',
-      description: 'In-depth Python programming training including web development and data manipulation.',
+      description: 'Python fundamentals and applied programming across common engineering use cases.',
       icon: BookOpen,
       color: 'from-purple-500 to-indigo-500'
     }
@@ -101,9 +102,15 @@ const Education = () => {
                     <p className="text-lg font-medium">{education.institution}</p>
                   </div>
                   
-                  <div className="flex items-center space-x-2 text-muted-foreground">
-                    <Calendar size={16} />
-                    <span>{education.period}</span>
+                  <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
+                    <div className="flex items-center space-x-2">
+                      <Calendar size={16} />
+                      <span>{education.period}</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Award size={16} className="text-primary" />
+                      <span className="font-medium text-foreground">Aggregate {education.grade}</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -112,7 +119,7 @@ const Education = () => {
                 <p className="text-muted-foreground text-lg">{education.description}</p>
                 
                 <div>
-                  <h5 className="font-semibold mb-4">Key Coursework:</h5>
+                  <h5 className="font-semibold mb-4">Key modules:</h5>
                   <div className="grid md:grid-cols-2 gap-3">
                     {education.coursework.map((course, index) => (
                       <div
@@ -175,14 +182,14 @@ const Education = () => {
                 <div className="text-sm text-muted-foreground">Software Engineering</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                <div className="text-3xl font-bold text-primary mb-2">5</div>
                 <div className="text-muted-foreground">Certifications</div>
-                <div className="text-sm text-muted-foreground">Professional Development</div>
+                <div className="text-sm text-muted-foreground">Courses and credentials</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">2022</div>
-                <div className="text-muted-foreground">Excellence Award</div>
-                <div className="text-sm text-muted-foreground">Outstanding Performance</div>
+                <div className="text-3xl font-bold text-primary mb-2">86.2%</div>
+                <div className="text-muted-foreground">Degree aggregate</div>
+                <div className="text-sm text-muted-foreground">Certificate of Excellence (2022)</div>
               </div>
             </div>
           </div>

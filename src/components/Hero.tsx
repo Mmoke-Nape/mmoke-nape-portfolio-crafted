@@ -22,8 +22,9 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              A passionate <span className="text-primary font-semibold">Software Engineer</span> crafting innovative digital solutions with{" "}
-              <span className="text-primary font-semibold">2+ years</span> of experience in financial and tech sectors
+              <span className="text-primary font-semibold">Intermediate Software Engineer</span> building cloud-native, low-latency systems in{" "}
+              <span className="text-primary font-semibold">FinTech and banking</span> — with almost{" "}
+              <span className="text-primary font-semibold">four years</span> of experience across the full stack
             </p>
           </div>
 

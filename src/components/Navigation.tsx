@@ -105,7 +105,7 @@ const Navigation = () => {
               ))}
               <div className="flex space-x-4 pt-4 border-t border-border">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Mmoke-Nape"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -113,7 +113,7 @@ const Navigation = () => {
                   <Github size={20} />
                 </a>
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/mmokenape/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"

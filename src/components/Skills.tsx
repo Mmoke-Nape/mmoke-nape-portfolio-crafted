@@ -7,54 +7,54 @@ const Skills = () => {
     {
       title: 'Frontend Development',
       icon: Globe,
-      description: 'Building beautiful and responsive user interfaces',
-      skills: ['Flutter & Dart', 'Angular', 'React', 'HTML/CSS', 'TypeScript'],
+      description: 'Bank-grade web interfaces and rich client experiences',
+      skills: ['Angular', 'TypeScript', 'NgRx', 'React', 'Redux', 'HTML/CSS'],
       color: 'from-blue-500 to-cyan-500'
     },
     {
       title: 'Backend Development', 
       icon: Server,
-      description: 'Creating robust server-side applications',
-      skills: ['Java Spring Boot', 'Python', 'C++', 'Microservices', 'RESTful APIs'],
+      description: 'Services, integrations, and scalable architectures',
+      skills: ['Java / Spring Boot', 'Java EE', 'Python', 'Kotlin', 'Microservices', 'REST APIs', 'Authentication'],
       color: 'from-green-500 to-emerald-500'
     },
     {
       title: 'Mobile Development',
       icon: Smartphone,
-      description: 'Native and cross-platform mobile apps',
-      skills: ['Flutter', 'Dart', 'iOS Development', 'Android Development', 'Mobile UI/UX'],
+      description: 'Cross-platform apps with polished mobile UI/UX',
+      skills: ['Flutter', 'Dart', 'Mobile UI/UX'],
       color: 'from-purple-500 to-pink-500'
     },
     {
-      title: 'Database & DevOps',
+      title: 'Data, Cloud & DevOps',
       icon: Database,
-      description: 'Data management and deployment automation',
-      skills: ['MySQL', 'Docker', 'CI/CD', 'Git/GitLab', 'Cloud Services'],
+      description: 'Data platforms, containers, and delivery pipelines',
+      skills: ['SQL', 'AWS', 'Docker', 'CI/CD', 'Git / GitLab', 'Kibana / Elastic'],
       color: 'from-orange-500 to-red-500'
     },
     {
       title: 'Testing & Quality',
       icon: TestTube,
-      description: 'Ensuring code quality and reliability',
-      skills: ['JUnit', 'Unit Testing', 'Integration Testing', 'Code Review', 'Quality Assurance'],
+      description: 'Automated checks and high standards in production',
+      skills: ['JUnit', 'Cypress', 'Regression testing', 'Code review', 'Quality focus'],
       color: 'from-teal-500 to-cyan-500'
     },
     {
-      title: 'Project Management',
+      title: 'Delivery & Collaboration',
       icon: Users,
-      description: 'Leading teams and managing projects effectively',
-      skills: ['JIRA Software', 'Agile/Scrum', 'Team Leadership', 'Communication', 'Problem Solving'],
+      description: 'Agile delivery, stakeholder alignment, and tooling',
+      skills: ['Agile / Scrum', 'JIRA', 'Mentoring', 'Demos', 'Sprint ceremonies'],
       color: 'from-indigo-500 to-purple-500'
     }
   ];
 
   const coreCompetencies = [
-    { name: 'Full-Stack Development', icon: Code },
-    { name: 'Mobile Development', icon: Smartphone },
-    { name: 'Team Collaboration', icon: Users },
-    { name: 'Version Control', icon: GitBranch },
-    { name: 'Database Design', icon: Database },
-    { name: 'Problem Solving', icon: TestTube },
+    { name: 'Full-Stack Delivery', icon: Code },
+    { name: 'Front-End Engineering', icon: Globe },
+    { name: 'Back-End & Services', icon: Server },
+    { name: 'Mobile UI / UX', icon: Smartphone },
+    { name: 'Git / GitLab', icon: GitBranch },
+    { name: 'Complex Problem Solving', icon: TestTube },
   ];
 
   return (
@@ -147,15 +147,15 @@ const Skills = () => {
             </p>
             <div className="flex justify-center space-x-8 text-sm font-medium">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">2+</div>
+                <div className="text-2xl font-bold text-primary">~4</div>
                 <div className="text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">10+</div>
+                <div className="text-2xl font-bold text-primary">12+</div>
                 <div className="text-muted-foreground">Technologies</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">5+</div>
+                <div className="text-2xl font-bold text-primary">5</div>
                 <div className="text-muted-foreground">Certifications</div>
               </div>
             </div>

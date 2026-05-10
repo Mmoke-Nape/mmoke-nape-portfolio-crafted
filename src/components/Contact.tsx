@@ -124,17 +124,29 @@ const Contact = () => {
             </div>
 
             {/* Additional Info */}
-            <div className="bg-card border border-border rounded-xl p-6">
-              <div className="flex items-start space-x-3">
-                <MapPin className="text-primary mt-1" size={20} />
-                <div>
-                  <h4 className="font-semibold mb-2">Location</h4>
-                  <p className="text-muted-foreground">
-                    South Africa
-                    <br />
-                    Available for remote work and collaboration
-                  </p>
+            <div className="space-y-4">
+              <div className="bg-card border border-border rounded-xl p-6">
+                <div className="flex items-start space-x-3">
+                  <MapPin className="text-primary mt-1" size={20} />
+                  <div>
+                    <h4 className="font-semibold mb-2">Location</h4>
+                    <p className="text-muted-foreground">
+                      Johannesburg, Gauteng, 2091
+                      <br />
+                      South Africa — open to remote collaboration
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div className="bg-card border border-border rounded-xl p-6">
+                <h4 className="font-semibold mb-2">Languages</h4>
+                <p className="text-muted-foreground text-sm">
+                  English (fluent), Setswana (fluent)
+                </p>
+                <h4 className="font-semibold mb-2 mt-4">Interests</h4>
+                <p className="text-muted-foreground text-sm">
+                  Problem solving, technology, cars, and sports — especially basketball.
+                </p>
               </div>
             </div>
           </div>
@@ -253,7 +265,7 @@ const Contact = () => {
                 Start a Conversation
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/mmokenape/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
