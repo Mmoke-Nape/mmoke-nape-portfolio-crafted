@@ -1,19 +1,19 @@
-
 import React from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-background via-background to-background/50">
-      <div className="max-w-7xl mx-auto section-padding w-full">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <div className="relative z-10 max-w-7xl mx-auto section-padding w-full">
         <div className="text-center space-y-8 pt-20 md:pt-0">
-          {/* Available for opportunities - positioned properly for mobile */}
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <div className="w-2 h-2 rounded-full animate-pulse bg-primary" />
             Available for opportunities
           </div>
 
-          {/* Main heading */}
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
               Hi, I'm{" "}
@@ -22,13 +22,19 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              <span className="text-primary font-semibold">Intermediate Software Engineer</span> building cloud-native, low-latency systems in{" "}
-              <span className="text-primary font-semibold">FinTech and banking</span> — with almost{" "}
-              <span className="text-primary font-semibold">four years</span> of experience across the full stack
+              <span className="text-primary font-semibold">
+                Intermediate Software Engineer
+              </span>{" "}
+              building cloud-native, low-latency systems in{" "}
+              <span className="text-primary font-semibold">
+                FinTech and banking
+              </span>{" "}
+              — with almost{" "}
+              <span className="text-primary font-semibold">four years</span> of
+              experience across the full stack
             </p>
           </div>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#contact"
@@ -44,7 +50,6 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a
               href="https://github.com/Mmoke-Nape"
@@ -71,9 +76,11 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="#about"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
             <ArrowDown size={24} />
           </a>
         </div>

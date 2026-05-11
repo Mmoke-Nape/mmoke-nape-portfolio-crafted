@@ -127,7 +127,7 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="bg-card border border-border rounded-xl p-6">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="text-primary mt-1" size={20} />
+                  <MapPin className="text-primary-foreground mt-1" size={20} />
                   <div>
                     <h4 className="font-semibold mb-2">Location</h4>
                     <p className="text-muted-foreground">
@@ -236,7 +236,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+                  className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
                 >
                   <Send size={20} />
                   <span>Send Message</span>

@@ -7,12 +7,14 @@ import Experience from '../components/Experience';
 import Education from '../components/Education';
 import Contact from '../components/Contact';
 import Navigation from '../components/Navigation';
+import GlobalAntigravityBackground from '../components/GlobalAntigravityBackground';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="relative min-h-screen bg-background text-foreground">
+      <GlobalAntigravityBackground />
       <Navigation />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Skills />
